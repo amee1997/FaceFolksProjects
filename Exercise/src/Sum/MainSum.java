@@ -5,27 +5,19 @@ import java.util.Scanner;
 public class MainSum {
 
 	public static void main(String[] args) {
-		int size;
+		int n;
 		int sum=0;
 		do {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a number");
-		size = sc.nextInt();
-		}while(size<0);
-		int arr[] = new int[size];
-		if(size<0)
-		{
-			System.out.println("Invalid input");
-		}
-		else
-		{
-		for(int i =0;i<=size;i++)
-		{
-			sum=sum+i;
-		}
+		 n = sc.nextInt();
+		}while(n<0);
+     
+		sum = n*(n+1)/2;
+
 		System.out.println(sum);
 		// TODO Auto-generated method stub
 
 	}
 	}
-}
+

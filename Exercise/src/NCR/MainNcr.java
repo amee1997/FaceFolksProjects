@@ -8,12 +8,12 @@ public class MainNcr {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number of n");
-		int n = sc.nextInt();
+		long n = sc.nextInt();
 		System.out.println("Enter the number of r");
-		int r = sc.nextInt();
-		int n1 = 1;
-		int r1 = 1;
-		int s1=1;
+		long r = sc.nextInt();
+		long n1 = 1;
+		long r1 = 1;
+		long s1=1;
 		for(int i=1;i<=n;i++)
 		{
 			n1 = n1 * i;
@@ -23,13 +23,13 @@ public class MainNcr {
 			r1 = r1 * i;
 		}
 		
-		int s = n-r;
+		long s = n-r;
 		for(int i=1;i<=s;i++)
 		{
 			s1 = s1 * i;
 		}
 		
-		int ncr = n1/(r1*s1);
+		long ncr = n1/(r1*s1);
 		System.out.println("The NCR factor for given values is:"+ncr);
 		
 		// TODO Auto-generated method stub

@@ -11,6 +11,8 @@ public class MainSculp {
 		System.out.println("Enter the kgs of gold");
 		k = sc.nextInt();
 		int s = k+(k/5);
+		if((k/5)>=5)
+			 s = s+(k/25);
 		System.out.println("Number of Sculptors can be made is" +" "+s);
 
 	}
